@@ -36,16 +36,21 @@ public class LoginActivity extends AppCompatActivity {
                 String userText = userIdEdit.getText().toString();
                 String userPw = userPwEdit.getText().toString();
 
-                if (userText.equals("tjeit") && userPw.equals("qwer1234")){
+                /*if (userText.equals("tjeit") && userPw.equals("qwer1234")){
 
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
-                    //finish();
+                    finish();
 
                 } else {
                     Toast.makeText(LoginActivity.this, "로그인에 실패했습니다. \n ID/PW 를 확인해주세요.", Toast.LENGTH_SHORT).show();
 
-                }
+                }*/
+
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                intent.putExtra("user_id",userText);
+                startActivity(intent);
+                finish();
 
 
 

@@ -37,12 +37,16 @@
             android:layout_height="40dp"
             android:src="@mipmap/ic_launcher"
             />
+
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:padding="20dp"
         android:background="#34C6F5"
         >
@@ -51,6 +55,11 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcomeMsgTxt"
             />
 
     </LinearLayout>
